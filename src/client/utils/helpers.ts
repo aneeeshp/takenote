@@ -33,7 +33,7 @@ export const getNoteTitle = (text: string): string => {
 
   // Get the first line of text after any newlines
   // In the future, this should break on a full word
-  return noteText ? noteText[0].trim().split(/\r?\n/)[0] : LabelText.NEW_NOTE
+  return noteText ? noteText[0].trim().split(/\r?\n/)[0] : LabelText.NEW_TEST_NOTE
 }
 
 export const noteWithFrontmatter = (note: NoteItem, category?: CategoryItem): string =>

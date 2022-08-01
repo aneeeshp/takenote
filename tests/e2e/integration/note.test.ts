@@ -66,7 +66,7 @@ describe('Manage notes test', () => {
     createXUniqueNotes(1)
   })
 
-  it('should try to create a few new notes', () => {
+  it('should try to create a few new test notes', () => {
     clickCreateNewNote()
     assertNoteListLengthEquals(2)
     assertNewNoteCreated()
