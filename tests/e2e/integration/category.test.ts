@@ -60,7 +60,7 @@ describe('Categories', () => {
     // add a category
     addCategory(dynamicTimeCategoryName)
 
-    // navigate back to All Notes create a new note, and move it to that category
+    // navigate back to All Notes create a new test note, and move it to that category
     navigateToNotes()
     createXUniqueNotes(1)
     clickNoteOptions()
