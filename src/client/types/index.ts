@@ -18,6 +18,7 @@ export interface NoteItem {
   category?: string
   scratchpad?: boolean
   trash?: boolean
+  contact?: boolean
   favorite?: boolean
 }
 

@@ -5,6 +5,7 @@ export const folderMap: Record<Folder, string> = {
   [Folder.FAVORITES]: 'Favorites',
   [Folder.SCRATCHPAD]: 'Scratchpad',
   [Folder.TRASH]: 'Trash',
+  [Folder.CONTACT]: 'Contact',
   [Folder.CATEGORY]: 'Category',
 }
 

@@ -107,6 +107,14 @@ export const AppSidebar: React.FC = () => {
           swapFolder={swapFolderHandler}
           addNoteType={_assignTrashToNotes}
         />
+        <FolderOption
+          active={activeFolder === Folder.CONTACT}
+          text={LabelText.CONTACT}
+          dataTestID={TestID.FOLDER_CONTACT}
+          folder={Folder.CONTACT}
+          swapFolder={swapFolderHandler}
+          addNoteType={_assignTrashToNotes}
+        />
         <CategoryList />
       </section>
     </aside>

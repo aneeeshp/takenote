@@ -27,6 +27,7 @@ export const FolderOption: React.FC<FolderOptionProps> = ({
     [Folder.FAVORITES]: false,
     [Folder.SCRATCHPAD]: false,
     [Folder.TRASH]: false,
+    [Folder.CONTACT]: false,
     [Folder.CATEGORY]: false,
   })
   const dragEnterHandler = () => {
