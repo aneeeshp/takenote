@@ -26,8 +26,9 @@ export const NoteList: React.FC = () => {
   // ===========================================================================
 
   const { notesSortKey } = useSelector(getSettings)
-  const { activeCategoryId, activeFolder, selectedNotesIds, notes, searchValue } =
-    useSelector(getNotes)
+  const { activeCategoryId, activeFolder, selectedNotesIds, notes, searchValue } = useSelector(
+    getNotes
+  )
   const { categories } = useSelector(getCategories)
 
   // ===========================================================================
@@ -69,6 +70,7 @@ export const NoteList: React.FC = () => {
     [Folder.SCRATCHPAD]: (note) => !!note.scratchpad,
     [Folder.FAVORITES]: (note) => !note.trash && !!note.favorite,
     [Folder.TRASH]: (note) => !!note.trash,
+    [Folder.CONTACT]: (note) => !!note.contact,
     [Folder.ALL]: (note) => !note.trash && !note.scratchpad,
   }
 

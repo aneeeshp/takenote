@@ -13,6 +13,7 @@ export enum TestID {
   FOLDER_NOTES = 'notes',
   FOLDER_FAVORITES = 'favorites',
   FOLDER_TRASH = 'trash',
+  FOLDER_CONTACT = 'contact',
   NEW_CATEGORY_FORM = 'new-category-form',
   NEW_CATEGORY_INPUT = 'new-category-label',
   NOTE_LIST = 'note-list',

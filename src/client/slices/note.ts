@@ -40,6 +40,7 @@ export const getFirstNoteId = (
     [Folder.FAVORITES]: () => availableNotes.find((note) => note.favorite),
     [Folder.SCRATCHPAD]: () => availableNotes.find((note) => note.scratchpad),
     [Folder.TRASH]: () => notes.find((note) => note.trash),
+    [Folder.CONTACT]: () => notes.find((note) => note.trash),
   }[folder]()
 
   return firstNote ? firstNote.id : ''

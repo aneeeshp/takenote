@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Book, Star, Trash2 } from 'react-feather'
+import { Book, Phone, Star, Trash2 } from 'react-feather'
 
 import { Folder } from '@/utils/enums'
 import { iconColor } from '@/utils/constants'
@@ -27,6 +27,7 @@ export const FolderOption: React.FC<FolderOptionProps> = ({
     [Folder.FAVORITES]: false,
     [Folder.SCRATCHPAD]: false,
     [Folder.TRASH]: false,
+    [Folder.CONTACT]: false,
     [Folder.CATEGORY]: false,
   })
   const dragEnterHandler = () => {
@@ -57,6 +58,8 @@ export const FolderOption: React.FC<FolderOptionProps> = ({
       return <Star size={15} className="app-sidebar-icon" color={iconColor} />
     } else if (folder === 'ALL') {
       return <Book size={15} className="app-sidebar-icon" color={iconColor} />
+    } else if (folder === 'CONTACT') {
+      return <Phone size={15} className="app-sidebar-icon" color={iconColor} />
     } else {
       return <Trash2 size={15} className="app-sidebar-icon" color={iconColor} />
     }

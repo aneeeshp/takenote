@@ -4,6 +4,7 @@ export enum Folder {
   FAVORITES = 'FAVORITES',
   SCRATCHPAD = 'SCRATCHPAD',
   TRASH = 'TRASH',
+  CONTACT = 'CONTACT',
 }
 
 export enum Shortcuts {
